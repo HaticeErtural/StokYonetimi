@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sy.Core.Abstract
 {
-    public abstract class BaseEntity<TKey> : IEntity<TKey>
+    public abstract class BaseEntity<TKey> :AuditBase, IEntity<TKey>
     {
         [Key]//yapmana gerek yok EF zaten Id kelimesini görünce bunun PK olduğunu anlıyor
         public TKey Id { get; set; }

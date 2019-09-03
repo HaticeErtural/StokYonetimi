@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Sy.Core.Abstract
 {
+    //kilit işareti sunucudaki ile sendeki hali yanı
+    //kırmızı olanlar sendekiyle faklı commit etmen lazım
+
     public abstract class AuditBase //amaç burda yapılan değişklikleri tutmak takip etmek takip etmek isteğim classlar 
     {
         public AuditBase()

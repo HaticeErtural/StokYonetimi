@@ -51,11 +51,12 @@
     <Compile Include="Abstract\AuditBase.cs" />
     <Compile Include="Abstract\BaseEntity.cs" />
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\ReguiredAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ComplexTypes\" />
-    <Folder Include="Entities\" />
     <Folder Include="Enums\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
