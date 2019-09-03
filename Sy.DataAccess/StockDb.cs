@@ -17,6 +17,9 @@ namespace Sy.DataAccess
 
         }
         public virtual DbSet<Product>Products  { get; set; }//tabloyu oluştur 
+        public virtual DbSet<Product> Clients { get; set; }
+  
+
 
     }
 }
