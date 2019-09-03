@@ -51,6 +51,7 @@
     <Compile Include="Abstract\AuditBase.cs" />
     <Compile Include="Abstract\BaseEntity.cs" />
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Entities\Client.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ReguiredAttribute.cs" />

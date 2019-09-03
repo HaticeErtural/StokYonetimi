@@ -49,8 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Sy.Core\Sy.Core.csproj">
+      <Project>{7c4838a2-5727-46d9-b20a-1709ef4a95b7}</Project>
+      <Name>Sy.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Sy.DataAccess\Sy.DataAccess.csproj">
       <Project>{ad8f6109-7d3a-40e1-be45-9629c2c75054}</Project>
       <Name>Sy.DataAccess</Name>
