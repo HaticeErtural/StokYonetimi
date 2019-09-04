@@ -24,5 +24,7 @@ namespace Sy.Core.Entities
 
         public int CriticStock { get; set; } = 10; //her ürün için kritik stok miktarı var çok satılan ve satılmayana ürüne göre belirleniyor
 
+        public virtual ICollection<ProductStockAction> ProductStockActions { get; set; } = new HashSet<ProductStockAction>();
+
     }
 }

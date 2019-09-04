@@ -38,47 +38,48 @@
             // btnKaydol
             // 
             this.btnKaydol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydol.Location = new System.Drawing.Point(173, 102);
+            this.btnKaydol.Location = new System.Drawing.Point(173, 65);
             this.btnKaydol.Name = "btnKaydol";
-            this.btnKaydol.Size = new System.Drawing.Size(87, 33);
+            this.btnKaydol.Size = new System.Drawing.Size(87, 28);
             this.btnKaydol.TabIndex = 7;
-            this.btnKaydol.Text = "Kaydol";
+            this.btnKaydol.Text = "GİRİŞ";
             this.btnKaydol.UseVisualStyleBackColor = true;
+            this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
             // txtSifre
             // 
-            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtSifre.Location = new System.Drawing.Point(89, 54);
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtSifre.Location = new System.Drawing.Point(89, 37);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '*';
-            this.txtSifre.Size = new System.Drawing.Size(171, 29);
+            this.txtSifre.Size = new System.Drawing.Size(171, 22);
             this.txtSifre.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(12, 54);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(12, 40);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 24);
+            this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Şifre:";
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtEmail.Location = new System.Drawing.Point(89, 9);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(171, 29);
+            this.txtEmail.Size = new System.Drawing.Size(171, 22);
             this.txtEmail.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 24);
+            this.label3.Size = new System.Drawing.Size(51, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Email:";
             // 
@@ -86,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 149);
+            this.ClientSize = new System.Drawing.Size(271, 106);
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.label4);
@@ -95,6 +96,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

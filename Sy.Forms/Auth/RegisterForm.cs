@@ -56,5 +56,10 @@ namespace Sy.Forms.Auth
             this.Close();//  O anda bulunduğu classın o anki referansına işaret eder
             //Base kalıtım aldığımız classı işaret eder this c deki pointeri çözüyor
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
