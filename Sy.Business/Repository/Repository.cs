@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
@@ -10,7 +8,7 @@ using Sy.DataAccess;
 
 namespace Sy.Business.Repository
 {
-
+    //repository oluşturuyorsun artık istediğin kadar class oluşturabilrsin
     public class Repository<TEntity, TKey> : IRepository<TEntity, TKey> 
         where TEntity :class, IEntity<TKey>//Tentity i class yapabilmek için önüne class yazdık
     {
@@ -47,8 +45,7 @@ namespace Sy.Business.Repository
 
         public int Save()
         {
-            throw new NotImplementedException();
-        }
+            return _context.SaveChanges();        }
 
         public int UPdate(TEntity entity)
         {

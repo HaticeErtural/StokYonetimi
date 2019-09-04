@@ -9,7 +9,7 @@ namespace Sy.Core.Abstract
     public interface IEntity
     {
     }
-    public interface IEntity<TKey>//Diamond Expression Id nesenesinin tipi girdiğin değere göre  tkey değişecek 
+    public interface IEntity<TKey>//Diamond Expression--- Id nesenesinin tipi girdiğin değere göre  tkey değişecek 
     {
         TKey Id { get; set; }
     }

@@ -1,4 +1,5 @@
 ﻿using Sy.Core.Abstract;
+using Sy.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -23,6 +24,8 @@ namespace Sy.Core.Entities
 
         [Required, StringLength(50)]
         public string Email { get; set; }
+
+        public ApplicationRole ApplicationRole { get; set; }
 
 
     }
